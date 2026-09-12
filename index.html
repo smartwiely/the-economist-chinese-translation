@@ -3,25 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>《经济学人》中文译本</title>
+  <title>《经济学人》中文译本 · 日期索引</title>
   <style>
-    :root { --green: #1e7a46; --dark: #155a34; --bg: #f7faf7; --line: #dfe9e1; }
+    :root { --green: #1e7a46; --dark: #155a34; --bg: #f5f7f4; --ink: #26302b; --muted: #718078; --line: #dfe6e0; }
     * { box-sizing: border-box; }
-    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px; background: var(--bg); color: #26302b; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    .card { width: min(680px, 100%); padding: 42px 36px; background: #fff; border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 8px 30px rgba(20, 60, 35, .08); text-align: center; }
-    h1 { margin: 0 0 12px; color: var(--dark); font-size: clamp(24px, 5vw, 36px); }
-    p { margin: 0 0 26px; color: #68776e; line-height: 1.7; }
-    a { display: inline-block; padding: 12px 22px; border-radius: 9px; background: var(--green); color: #fff; text-decoration: none; font-weight: 600; }
-    a:hover { background: var(--dark); }
-    small { display: block; margin-top: 22px; color: #91a197; line-height: 1.6; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .shell { width: min(900px, calc(100% - 32px)); margin: 0 auto; padding: 64px 0 80px; }
+    header { margin-bottom: 42px; }
+    .eyebrow { margin: 0 0 12px; color: var(--green); font-size: 13px; font-weight: 700; letter-spacing: .12em; }
+    h1 { margin: 0; color: var(--dark); font-family: Georgia, "Songti SC", serif; font-size: clamp(30px, 6vw, 52px); font-weight: 700; }
+    .intro { max-width: 620px; margin: 18px 0 0; color: var(--muted); font-size: 16px; line-height: 1.8; }
+    .year { margin: 0 0 14px; color: var(--dark); font-size: 14px; font-weight: 700; letter-spacing: .08em; }
+    .issue { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 24px 26px; background: #fff; border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 8px 24px rgba(20, 60, 35, .06); }
+    .date { margin: 0 0 8px; color: var(--dark); font-size: 22px; font-weight: 700; }
+    .meta { margin: 0; color: var(--muted); font-size: 14px; }
+    .read { flex: 0 0 auto; padding: 12px 18px; border-radius: 9px; background: var(--green); color: #fff; text-decoration: none; font-size: 14px; font-weight: 700; }
+    .read:hover { background: var(--dark); }
+    footer { margin-top: 42px; padding-top: 18px; border-top: 1px solid var(--line); color: #91a097; font-size: 12px; line-height: 1.7; }
+    @media (max-width: 560px) { .shell { padding-top: 40px; } .issue { align-items: flex-start; flex-direction: column; } .read { width: 100%; text-align: center; } }
   </style>
 </head>
 <body>
-  <main class="card">
-    <h1>《经济学人》中文译本</h1>
-    <p>2026 年 9 月 12 日刊 · 全文中文翻译</p>
-    <a href="./经济学人%202026-09-12%20全文译本.html">进入阅读</a>
-    <small>非官方个人翻译整理，仅供个人学习与研究使用。</small>
+  <main class="shell">
+    <header>
+      <p class="eyebrow">THE ECONOMIST · 中文译本</p>
+      <h1>按日期阅读</h1>
+      <p class="intro">这里收录已经完成的《经济学人》中文翻译。选择日期即可打开对应的完整 HTML 阅读页面。</p>
+    </header>
+
+    <section aria-labelledby="year-2026">
+      <h2 class="year" id="year-2026">2026</h2>
+      <article class="issue">
+        <div>
+          <p class="date">2026 年 9 月 12 日</p>
+          <p class="meta">全文中文翻译 · 单文件阅读版</p>
+        </div>
+        <a class="read" href="./经济学人%202026-09-12%20全文译本.html">打开译本</a>
+      </article>
+    </section>
+
+    <footer>非官方个人翻译整理，仅供个人学习与研究使用。</footer>
   </main>
 </body>
 </html>
