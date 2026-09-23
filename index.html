@@ -14,13 +14,15 @@
     h1 { margin: 0; color: var(--dark); font-family: Georgia, "Songti SC", serif; font-size: clamp(30px, 6vw, 52px); font-weight: 700; }
     .intro { max-width: 620px; margin: 18px 0 0; color: var(--muted); font-size: 16px; line-height: 1.8; }
     .year { margin: 0 0 14px; color: var(--dark); font-size: 14px; font-weight: 700; letter-spacing: .08em; }
-    .issue { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 14px; padding: 24px 26px; background: #fff; border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 8px 24px rgba(20, 60, 35, .06); }
+    .issue { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-bottom: 14px; padding: 18px 20px; background: #fff; border: 1px solid var(--line); border-radius: 14px; box-shadow: 0 8px 24px rgba(20, 60, 35, .06); }
+    .issue-main { display: flex; align-items: center; gap: 18px; min-width: 0; }
+    .cover { display: block; flex: 0 0 78px; width: 78px; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 12px rgba(20, 60, 35, .16); }
     .date { margin: 0 0 8px; color: var(--dark); font-size: 22px; font-weight: 700; }
     .meta { margin: 0; color: var(--muted); font-size: 14px; }
     .read { flex: 0 0 auto; padding: 12px 18px; border-radius: 9px; background: var(--green); color: #fff; text-decoration: none; font-size: 14px; font-weight: 700; }
     .read:hover { background: var(--dark); }
     footer { margin-top: 42px; padding-top: 18px; border-top: 1px solid var(--line); color: #91a097; font-size: 12px; line-height: 1.7; }
-    @media (max-width: 560px) { .shell { padding-top: 40px; } .issue { align-items: flex-start; flex-direction: column; } .read { width: 100%; text-align: center; } }
+    @media (max-width: 560px) { .shell { padding-top: 40px; } .issue { align-items: stretch; flex-direction: column; } .issue-main { width: 100%; } .cover { flex-basis: 72px; width: 72px; } .read { width: 100%; text-align: center; } }
   </style>
 </head>
 <body>
@@ -34,72 +36,102 @@
     <section aria-labelledby="year-2026">
       <h2 class="year" id="year-2026">2026</h2>
       <article class="issue">
-        <div>
-          <p class="date">2026 年 9 月 19 日</p>
-          <p class="meta">全文中文翻译 · 单文件阅读版</p>
+        <div class="issue-main">
+          <img class="cover" src="./covers/2026-09-19.jpg" alt="《经济学人》2026 年 9 月 19 日封面">
+          <div>
+            <p class="date">2026 年 9 月 19 日</p>
+            <p class="meta">全文中文翻译 · 单文件阅读版</p>
+          </div>
         </div>
         <a class="read" href="./经济学人%202026-09-19%20全文译本.html">打开译本</a>
       </article>
       <article class="issue">
-        <div>
-          <p class="date">2026 年 9 月 12 日</p>
-          <p class="meta">全文中文翻译 · 单文件阅读版</p>
+        <div class="issue-main">
+          <img class="cover" src="./covers/2026-09-12.jpg" alt="《经济学人》2026 年 9 月 12 日封面">
+          <div>
+            <p class="date">2026 年 9 月 12 日</p>
+            <p class="meta">全文中文翻译 · 单文件阅读版</p>
+          </div>
         </div>
         <a class="read" href="./经济学人%202026-09-12%20全文译本.html">打开译本</a>
       </article>
       <article class="issue">
-        <div>
-          <p class="date">2026 年 9 月 5 日</p>
-          <p class="meta">全文中文翻译 · 单文件阅读版</p>
+        <div class="issue-main">
+          <img class="cover" src="./covers/2026-09-05.jpg" alt="《经济学人》2026 年 9 月 5 日封面">
+          <div>
+            <p class="date">2026 年 9 月 5 日</p>
+            <p class="meta">全文中文翻译 · 单文件阅读版</p>
+          </div>
         </div>
         <a class="read" href="./经济学人%202026-09-05%20全文译本.html">打开译本</a>
       </article>
       <article class="issue">
-        <div>
-          <p class="date">2026 年 8 月 29 日</p>
-          <p class="meta">全文中文翻译 · 单文件阅读版</p>
+        <div class="issue-main">
+          <img class="cover" src="./covers/2026-08-29.jpg" alt="《经济学人》2026 年 8 月 29 日封面">
+          <div>
+            <p class="date">2026 年 8 月 29 日</p>
+            <p class="meta">全文中文翻译 · 单文件阅读版</p>
+          </div>
         </div>
         <a class="read" href="./经济学人%202026-08-29%20全文译本.html">打开译本</a>
       </article>
       <article class="issue">
-        <div>
-          <p class="date">2026 年 8 月 22 日</p>
-          <p class="meta">全文中文翻译 · 单文件阅读版</p>
+        <div class="issue-main">
+          <img class="cover" src="./covers/2026-08-22.jpg" alt="《经济学人》2026 年 8 月 22 日封面">
+          <div>
+            <p class="date">2026 年 8 月 22 日</p>
+            <p class="meta">全文中文翻译 · 单文件阅读版</p>
+          </div>
         </div>
         <a class="read" href="./经济学人%202026-08-22%20全文译本.html">打开译本</a>
       </article>
       <article class="issue">
-        <div>
-          <p class="date">2026 年 8 月 15 日</p>
-          <p class="meta">全文中文翻译 · 单文件阅读版</p>
+        <div class="issue-main">
+          <img class="cover" src="./covers/2026-08-15.jpg" alt="《经济学人》2026 年 8 月 15 日封面">
+          <div>
+            <p class="date">2026 年 8 月 15 日</p>
+            <p class="meta">全文中文翻译 · 单文件阅读版</p>
+          </div>
         </div>
         <a class="read" href="./经济学人%202026-08-15%20全文译本.html">打开译本</a>
       </article>
       <article class="issue">
-        <div>
-          <p class="date">2026 年 8 月 8 日</p>
-          <p class="meta">全文中文翻译 · 单文件阅读版</p>
+        <div class="issue-main">
+          <img class="cover" src="./covers/2026-08-08.jpg" alt="《经济学人》2026 年 8 月 8 日封面">
+          <div>
+            <p class="date">2026 年 8 月 8 日</p>
+            <p class="meta">全文中文翻译 · 单文件阅读版</p>
+          </div>
         </div>
         <a class="read" href="./经济学人%202026-08-08%20全文译本.html">打开译本</a>
       </article>
       <article class="issue">
-        <div>
-          <p class="date">2026 年 8 月 1 日</p>
-          <p class="meta">全文中文翻译 · 单文件阅读版</p>
+        <div class="issue-main">
+          <img class="cover" src="./covers/2026-08-01.jpg" alt="《经济学人》2026 年 8 月 1 日封面">
+          <div>
+            <p class="date">2026 年 8 月 1 日</p>
+            <p class="meta">全文中文翻译 · 单文件阅读版</p>
+          </div>
         </div>
         <a class="read" href="./经济学人%202026-08-01%20全文译本.html">打开译本</a>
       </article>
       <article class="issue">
-        <div>
-          <p class="date">2026 年 7 月 25 日</p>
-          <p class="meta">全文中文翻译 · 单文件阅读版</p>
+        <div class="issue-main">
+          <img class="cover" src="./covers/2026-07-25.jpg" alt="《经济学人》2026 年 7 月 25 日封面">
+          <div>
+            <p class="date">2026 年 7 月 25 日</p>
+            <p class="meta">全文中文翻译 · 单文件阅读版</p>
+          </div>
         </div>
         <a class="read" href="./经济学人%202026-07-25%20全文译本.html">打开译本</a>
       </article>
       <article class="issue">
-        <div>
-          <p class="date">2026 年 7 月 18 日</p>
-          <p class="meta">全文中文翻译 · 单文件阅读版</p>
+        <div class="issue-main">
+          <img class="cover" src="./covers/2026-07-18.jpg" alt="《经济学人》2026 年 7 月 18 日封面">
+          <div>
+            <p class="date">2026 年 7 月 18 日</p>
+            <p class="meta">全文中文翻译 · 单文件阅读版</p>
+          </div>
         </div>
         <a class="read" href="./经济学人%202026-07-18%20全文译本.html">打开译本</a>
       </article>
